@@ -1,3 +1,64 @@
 // Place all the styles related to the static_pages controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+body {
+	width: 90%;
+	margin: auto;
+	color: black;
+}
+
+.navbar {
+	position: fixed;
+	padding: 20px 0 10px 0;
+	left: 0;
+	width: 100%;
+	z-index: 9999;
+	background-color: #B2B2B2;
+}
+
+.navbar ul {
+	float: right;
+}
+
+.navbar li {
+	list-style-type: none;
+	padding-right: 20px;
+	margin: auto;
+	display: inline;
+}
+
+h1 span {
+	color: #66B2B2;
+}
+
+h1 {
+	padding-top: 70px;
+}
+
+.contact-h1 {
+	padding-bottom: 30px;
+}
+
+.contact-list li {
+	list-style-type: none;
+	padding-bottom: 10px;
+}
+
+.contact-list ul {
+	padding-left: 5px;
+}
+
+.divider {
+	border: 1px solid;
+}
+
+footer {
+	padding-top: 20px;	
+}
+
+@media (max-width: 480px) {
+	.navbar {
+	padding: 0;
+	}
+}
