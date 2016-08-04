@@ -10,22 +10,15 @@ body {
 
 .navbar {
 	position: fixed;
-	padding: 20px 0 10px 0;
-	left: 0;
-	width: 100%;
-	z-index: 9999;
+	z-index: 1;
 	background-color: #B2B2B2;
 }
-
 .navbar ul {
-	float: right;
+	float:right;
 }
 
-.navbar li {
-	list-style-type: none;
-	padding-right: 20px;
-	margin: auto;
-	display: inline;
+#navbar a {
+	color: black;
 }
 
 h1 span {
