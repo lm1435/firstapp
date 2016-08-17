@@ -1,0 +1,19 @@
+// Place all the styles related to the products controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+.name {
+	color: #66B2B2;
+	text-align: center;
+}
+
+th {
+	padding-right: 10px;
+}
+
+.product-name {
+  padding-top: 50px;
+}
+
+.product-name, .product-description, .product-image {
+  color: red;
+}
