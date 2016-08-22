@@ -88,8 +88,11 @@ div {
 label {
   display: block;
 }
+.col-md-4 p, h1 {
+  text-align: center;
+}
 
 
-.product-name, .product-description, .product-image, .product-colour {
+.product-name, .product-description, .product-image, .product-colour, .product-price {
   color: red;
 }
