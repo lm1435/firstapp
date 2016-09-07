@@ -28,7 +28,7 @@ class ProductsController < ApplicationController
 
     respond_to do |format|
       if @product.save
-        format.html { redirect_to @product, notice: 'Product was successfully created.' }
+        format.html { redirect_to products_url }
         format.json { render :show, status: :created, location: @product }
       else
         format.html { render :new }
@@ -36,7 +36,7 @@ class ProductsController < ApplicationController
       end
     end
   end
-
+  #@product, notice: 'Product was successfully created.' code from def create that I replaced.
   # PATCH/PUT /products/1
   # PATCH/PUT /products/1.json
   def update
