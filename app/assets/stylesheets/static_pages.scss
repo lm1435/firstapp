@@ -72,6 +72,36 @@ footer {
 	width: 100%;
 }
 
+label {
+	margin-bottom: -10px;
+}
+
+.glyph {
+	display: inline;
+	padding: 1em;
+}
+
+.g-2 {
+	margin-left: -8px;
+}
+
+.g-3 {
+	margin-left: -6px;
+}
+
+
+.info p {
+	text-align: center;
+}
+
+.contact-list {
+	display: flex;
+	display: -ms-flex;
+	display: -webkit-flex;
+	justify-content: space-around;
+
+}
+
 @media (max-width: 480px){
 .navbar {
 	padding: 0;

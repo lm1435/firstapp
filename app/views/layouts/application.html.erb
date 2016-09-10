@@ -27,6 +27,12 @@
           </button>
         </div>
     		<div class="navbar-collapse collapse" id="navbar">
+          <div class="search">
+            <%= form_tag("/products", method: "get") do %>
+              <%= text_field_tag (:q) %>
+              <%= submit_tag("SEARCH") %>
+            <% end %>
+          </div>
           <ul class="nav navbar-nav navbar-right" id="navbar">
       			<li>
               <%= link_to 'HOME', root_path %>
