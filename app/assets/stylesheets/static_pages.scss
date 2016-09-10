@@ -99,7 +99,23 @@ label {
 	display: -ms-flex;
 	display: -webkit-flex;
 	justify-content: space-around;
+	flex-wrap: wrap; 
 
+}
+
+@media (max-width: 780px) {
+	form {
+		padding: 5px 0 0 10px;
+	}
+	input {
+	border: 1px solid black;
+	}
+textarea {
+	border: 1px solid black;
+	}
+	.glyph {
+		padding: .5em;
+	}
 }
 
 @media (max-width: 480px){
@@ -108,8 +124,8 @@ label {
 	}
 .carousel-indicators {
 	bottom: -10px;
-}
+	}
 .landing {
 	font-size: 1.4em;
-}
+	}
 }
