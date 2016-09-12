@@ -46,6 +46,10 @@ h1 {
 	border: 1px solid;
 }
 
+.product-columns {
+	height: 600px;
+}
+
 footer {
 	padding: 20px 0 50px 0;	
 }
@@ -72,9 +76,6 @@ footer {
 	width: 100%;
 }
 
-label {
-	margin-bottom: -10px;
-}
 
 .glyph {
 	display: inline;
@@ -101,6 +102,22 @@ label {
 	justify-content: space-around;
 	flex-wrap: wrap; 
 
+}
+
+.field-new {
+	margin: 5px 0;
+}
+
+.actions-new {
+  margin-top: 10px;
+}
+
+.panel-default {
+	margin-top: 100px;
+}
+
+#thank-you-text {
+	text-align: center;
 }
 
 @media (max-width: 780px) {
