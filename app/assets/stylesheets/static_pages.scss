@@ -95,7 +95,7 @@ footer {
 	text-align: center;
 }
 
-.contact-list {
+.contact-list, .parent-newuser, .editpage-parent, .parent-login {
 	display: flex;
 	display: -ms-flex;
 	display: -webkit-flex;
@@ -119,6 +119,35 @@ footer {
 #thank-you-text {
 	text-align: center;
 }
+
+#newpage-h2 {
+	text-align: center;
+}
+
+.parent-newuser {
+	align-items: center;
+}
+
+.newpage input {
+	border-radius: 5px;
+}
+
+#cancel-button-edit {
+	margin: 10px 0 10px 0;
+}
+
+#cancel-statement {
+	margin-top: 20px;
+}
+
+#login-h2 {
+	text-align: center;
+}
+
+.editpage {
+	text-align: center;
+}
+
 
 @media (max-width: 780px) {
 	form {

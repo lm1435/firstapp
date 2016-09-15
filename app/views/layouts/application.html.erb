@@ -46,10 +46,19 @@
       			<li>
               <%= link_to 'CONTACT', static_pages_contact_path %>
             </li>
-      		</ul>
+            <li id="login">
+              <% if user_signed_in? %>
+                <%= link_to('LOGOUT', destroy_user_session_path, :method => :delete) %>
+              <% else %>
+                <%= link_to('Login', new_user_session_path) %>
+              <% end %>
+            </li>
+          </ul>
         </div>
       </div>
   	</nav>
+    <p class="notice"> <%= notice %></p>
+    <p class="alert"> <%= alert %></p>
 
     <%= yield %>
 
