@@ -95,13 +95,12 @@ footer {
 	text-align: center;
 }
 
-.contact-list, .parent-newuser, .editpage-parent, .parent-login {
+.contact-list, .parent-newuser, .editpage-parent, .parent-login{
 	display: flex;
 	display: -ms-flex;
 	display: -webkit-flex;
 	justify-content: space-around;
 	flex-wrap: wrap; 
-
 }
 
 .field-new {
@@ -122,6 +121,7 @@ footer {
 
 #newpage-h2 {
 	text-align: center;
+	padding-top: 70px;
 }
 
 .parent-newuser {
@@ -142,9 +142,47 @@ footer {
 
 #login-h2 {
 	text-align: center;
+	padding-top: 70px;
+}
+
+#forgotpassword {
+	margin-top: 70px;
+	text-align: center;
+}
+
+#productshow {
+	margin-top: 70px;
+	text-align: center;
+}
+
+.parent-password {
+	display: flex;
+	display: -ms-flex;
+	display: -webkit-flex;
+	justify-content: center;
+	flex-wrap: wrap; 
+	text-align: center;
+}
+
+.password input {
+	padding: 10px;
+    font-size: 1.5em;
+    border: 1px solid #ccc;
+    border-radius: 4px;
 }
 
 .editpage {
+	text-align: center;
+}
+
+#products-h1 {
+	padding-top: 70px;
+}
+.landing {
+	padding: 70px 0 20px 0;
+}
+
+.landing-name {
 	text-align: center;
 }
 

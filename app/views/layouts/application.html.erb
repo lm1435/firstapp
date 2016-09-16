@@ -9,7 +9,7 @@
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-
+    
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
   </head>
@@ -57,8 +57,12 @@
         </div>
       </div>
   	</nav>
-    <p class="notice"> <%= notice %></p>
-    <p class="alert"> <%= alert %></p>
+    <% if notice %>
+      <p id="notice" class="alert alert-info"> <%= notice %></p>
+    <% end %>
+    <% if alert %>
+      <p id="alert" class="alert alert-warning"> <%= alert %></p>
+    <% end %>
 
     <%= yield %>
 

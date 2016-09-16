@@ -98,14 +98,6 @@ label {
   padding-top: 10px;
 }
 
-.landing {
-  padding-top: 50px;
-}
-
-.landing-name {
-  text-align: center;
-}
-
 .product-name, .product-description, .product-image, .product-colour, .product-price {
   color: red;
 }
@@ -126,5 +118,9 @@ label {
   text-align: center;
 }
 
+#alert, #notice {
+  margin-top: 100px;
+  text-align: center;
+}
 
 
