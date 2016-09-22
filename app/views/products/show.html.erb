@@ -1,33 +1,40 @@
-<h2 id="productshow"> Product View </h2>
-<p>
-  <strong class="product-name">Name:</strong>
-  <%= @product.name %>
-</p>
+<h2 id="productshow"> Product View</h2>
 
-<p>
-  <strong class="product-description">Description:</strong>
-  <%= @product.description %>
-</p>
+<div class="overall-product-show">
+  <p>
+    <strong class="product-name">Name:</strong><br>
+    <%= @product.name %>
+  </p>
 
-<p>
-  <strong class="product-image">Image url:</strong>
-  <%= @product.image_url %>
-</p>
+  <p>
+    <strong class="product-description">Description:</strong><br>
+    <%= @product.description %>
+  </p>
 
-<p>
-	<strong class="product-colour">Colour:</strong>
-	<%= @product.colour %>
-</p>
+  <p>
+    <strong class="product-image">Image url:</strong><br>
+    <%= @product.image_url %>
+  </p>
 
-<p>
-	<strong class="product-price">Price:</strong>
-	<%= @product.price %>
-</p>
+  <p>
+  	<strong class="product-colour">Colour:</strong><br>
+  	<%= @product.colour %>
+  </p>
 
-<p>
-  <strong class="product-rating">Rating:</strong>
-  <%= @product.highest_rating_comment %>
-</p>
+  <p>
+  	<strong class="product-price">Price:</strong><br>
+  	<%= @product.price %>
+  </p>
 
-<%= link_to 'Edit', edit_product_path(@product) %> |
-<%= link_to 'Back', products_path %>
+  <p>
+    <strong class="product-rating">Rating:</strong><br>
+    <%= @product.highest_rating_comment %>
+    <%= @product.lowest_rating_comment %>
+  </p>
+</div>
+<br>
+<br>
+<div class="links-product-show">
+  <%= link_to 'Edit', edit_product_path(@product) %> |
+  <%= link_to 'Back', products_path %>
+</div>

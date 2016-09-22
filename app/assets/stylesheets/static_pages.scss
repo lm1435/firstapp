@@ -76,6 +76,33 @@ footer {
 	width: 100%;
 }
 
+.search {
+  margin-bottom: -35px;
+  padding-top: 10px;
+}
+
+
+.login-field input {
+    padding: 10px;
+    margin-bottom: -10px;
+    font-size: 1.5em;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.remember-me label {
+  display: inline;
+}
+
+.button-login, .remember-me, .signup-render {
+  text-align: center;
+}
+
+#alert, #notice {
+  margin-top: 100px;
+  text-align: center;
+}
+
 
 .glyph {
 	display: inline;
@@ -186,6 +213,16 @@ footer {
 	text-align: center;
 }
 
+.overall-product-show {
+	border: 1px solid black;
+	border-radius: 15px;
+	margin: auto;
+	text-align: center;
+}
+
+.links-product-show {
+	text-align: center;
+}
 
 @media (max-width: 780px) {
 	form {
