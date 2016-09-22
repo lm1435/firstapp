@@ -177,11 +177,6 @@ footer {
 	text-align: center;
 }
 
-#productshow {
-	margin-top: 70px;
-	text-align: center;
-}
-
 .parent-password {
 	display: flex;
 	display: -ms-flex;
@@ -196,6 +191,11 @@ footer {
     font-size: 1.5em;
     border: 1px solid #ccc;
     border-radius: 4px;
+}
+
+.about-page p {
+	text-align: center;
+	margin-top: 3em;
 }
 
 .editpage {
@@ -213,16 +213,7 @@ footer {
 	text-align: center;
 }
 
-.overall-product-show {
-	border: 1px solid black;
-	border-radius: 15px;
-	margin: auto;
-	text-align: center;
-}
 
-.links-product-show {
-	text-align: center;
-}
 
 @media (max-width: 780px) {
 	form {

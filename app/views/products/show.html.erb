@@ -1,33 +1,30 @@
-<h2 id="productshow"> Product View</h2>
-
-<div class="overall-product-show">
-  <p>
-    <strong class="product-name">Name:</strong><br>
+<div class="overall-product-show" id="products">
+  <p id="product_name">
+    <strong class="product-name"></strong><br>
     <%= @product.name %>
   </p>
 
   <p>
-    <strong class="product-description">Description:</strong><br>
+    <strong class="product-image"></strong><br>
+    <%= image_tag(@product.image_url, class: 'img-responsive') %>
+  </p>
+
+  <p>
+    <strong class="product-description">Description</strong><br>
     <%= @product.description %>
   </p>
 
   <p>
-    <strong class="product-image">Image url:</strong><br>
-    <%= @product.image_url %>
-  </p>
-
-  <p>
-  	<strong class="product-colour">Colour:</strong><br>
+  	<strong class="product-colour">Color</strong><br>
   	<%= @product.colour %>
   </p>
 
   <p>
-  	<strong class="product-price">Price:</strong><br>
-  	<%= @product.price %>
+  	<strong class="product-price">Price</strong><br>$<%= @product.price %>
   </p>
 
   <p>
-    <strong class="product-rating">Rating:</strong><br>
+    <strong class="product-rating">Rating</strong><br>
     <%= @product.highest_rating_comment %>
     <%= @product.lowest_rating_comment %>
   </p>

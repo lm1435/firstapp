@@ -10,6 +10,33 @@ th {
 	padding-right: 10px;
 }
 
+#products {
+	margin-top: 6em;
+}
+
 .product-name {
   padding-top: 50px;
+}
+
+.overall-product-show {
+	margin: auto;
+	text-align: center;
+}
+
+.links-product-show {
+	text-align: center;
+}
+
+#products .img-responsive { 
+	max-width: 50%;
+	margin: auto;
+}
+
+#product_name {
+	font-size: 3em;
+	margin-bottom: 1em;
+}
+
+body {
+	background-color: gray;
 }
