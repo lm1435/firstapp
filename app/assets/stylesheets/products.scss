@@ -23,14 +23,31 @@ th {
 	text-align: center;
 }
 
+.product-show-flex {
+	display: flex;
+	display: -ms-flex;
+	display: -webkit-flex;
+	justify-content: space-around;
+	align-items: center;
+	flex-wrap: wrap; 
+}
+
 .links-product-show {
 	text-align: center;
 }
 
-#products .img-responsive { 
-	max-width: 50%;
-	margin: auto;
+#product_img  {
+	width: 50%;
+	margin: 0;
 }
+
+
+#product-desc {
+	border-radius: 5px;
+	border: 2px solid black;
+	padding: 2em;
+}
+
 
 #product_name {
 	font-size: 3em;
