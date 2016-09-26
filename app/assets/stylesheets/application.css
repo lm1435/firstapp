@@ -14,12 +14,3 @@
  *= require_self
  */
 
-
-#login {
-	text-transform: uppercase;
-	background-color: black;
-}
-
-#login a {
-	color: white;
-}

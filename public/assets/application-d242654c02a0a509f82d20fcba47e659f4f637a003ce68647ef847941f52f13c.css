@@ -1,0 +1,536 @@
+.cancel-on-png, .cancel-off-png, .star-on-png, .star-off-png, .star-half-png {
+  font-size: 2em;
+}
+
+@font-face {
+  font-family: "raty";
+  font-style: normal;
+  font-weight: normal;
+  src: url("fonts/raty.eot");
+  src: url("fonts/raty.eot?#iefix") format("embedded-opentype");
+  src: url("fonts/raty.svg#raty") format("svg");
+  src: url("fonts/raty.ttf") format("truetype");
+  src: url("fonts/raty.woff") format("woff");
+}
+
+.cancel-on-png, .cancel-off-png, .star-on-png, .star-off-png, .star-half-png {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-family: "raty";
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  line-height: 1;
+  speak: none;
+  text-transform: none;
+}
+
+.cancel-on-png:before {
+  content: "\e600";
+}
+
+.cancel-off-png:before {
+  content: "\e601";
+}
+
+.star-on-png:before {
+  content: "\f005";
+}
+
+.star-off-png:before {
+  content: "\f006";
+}
+
+.star-half-png:before {
+  content: "\f123";
+}
+/* line 4, /Users/Meza/Desktop/firstapp/app/assets/stylesheets/products.scss */
+.name {
+  color: #66B2B2;
+  text-align: center;
+}
+
+/* line 9, /Users/Meza/Desktop/firstapp/app/assets/stylesheets/products.scss */
+th {
+  padding-right: 10px;
+}
+
+/* line 13, /Users/Meza/Desktop/firstapp/app/assets/stylesheets/products.scss */
+#products {
+  margin-top: 6em;
+}
+
+/* line 17, /Users/Meza/Desktop/firstapp/app/assets/stylesheets/products.scss */
+.product-name {
+  padding-top: 50px;
+}
+
+/* line 21, /Users/Meza/Desktop/firstapp/app/assets/stylesheets/products.scss */
+.overall-product-show {
+  margin: auto;
+  text-align: center;
+}
+
+/* line 26, /Users/Meza/Desktop/firstapp/app/assets/stylesheets/products.scss */
+.product-show-flex {
+  display: flex;
+  display: -ms-flex;
+  display: -webkit-flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+/* line 35, /Users/Meza/Desktop/firstapp/app/assets/stylesheets/products.scss */
+.links-product-show {
+  text-align: center;
+}
+
+/* line 39, /Users/Meza/Desktop/firstapp/app/assets/stylesheets/products.scss */
+#product_img {
+  width: 50%;
+  margin: 0;
+}
+
+/* line 45, /Users/Meza/Desktop/firstapp/app/assets/stylesheets/products.scss */
+#product-desc {
+  border-radius: 5px;
+  border: 2px solid black;
+  padding: 2em;
+}
+
+/* line 52, /Users/Meza/Desktop/firstapp/app/assets/stylesheets/products.scss */
+#product_name {
+  font-size: 3em;
+  margin-bottom: 1em;
+}
+
+/* line 57, /Users/Meza/Desktop/firstapp/app/assets/stylesheets/products.scss */
+body {
+  background-color: gray;
+}
+/* line 1, /Users/Meza/Desktop/firstapp/app/assets/stylesheets/scaffolds.scss */
+body {
+  background-color: #fff;
+  color: #333;
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+  margin: 33px;
+}
+
+/* line 17, /Users/Meza/Desktop/firstapp/app/assets/stylesheets/scaffolds.scss */
+pre {
+  background-color: #eee;
+  padding: 10px;
+  font-size: 11px;
+}
+
+/* line 23, /Users/Meza/Desktop/firstapp/app/assets/stylesheets/scaffolds.scss */
+a {
+  color: #000;
+}
+/* line 26, /Users/Meza/Desktop/firstapp/app/assets/stylesheets/scaffolds.scss */
+a:visited {
+  color: #666;
+}
+/* line 30, /Users/Meza/Desktop/firstapp/app/assets/stylesheets/scaffolds.scss */
+a:hover {
+  color: #fff;
+  background-color: #000;
+}
+
+/* line 36, /Users/Meza/Desktop/firstapp/app/assets/stylesheets/scaffolds.scss */
+th {
+  padding-bottom: 5px;
+}
+
+/* line 40, /Users/Meza/Desktop/firstapp/app/assets/stylesheets/scaffolds.scss */
+td {
+  padding-bottom: 7px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+/* line 47, /Users/Meza/Desktop/firstapp/app/assets/stylesheets/scaffolds.scss */
+div.field, div.actions {
+  margin-bottom: 10px;
+}
+
+/* line 52, /Users/Meza/Desktop/firstapp/app/assets/stylesheets/scaffolds.scss */
+#notice {
+  color: green;
+  padding-top: 50px;
+}
+
+/* line 57, /Users/Meza/Desktop/firstapp/app/assets/stylesheets/scaffolds.scss */
+.field_with_errors {
+  padding: 2px;
+  background-color: red;
+  display: table;
+}
+
+/* line 63, /Users/Meza/Desktop/firstapp/app/assets/stylesheets/scaffolds.scss */
+#error_explanation {
+  width: 450px;
+  border: 2px solid red;
+  padding: 7px;
+  padding-bottom: 0;
+  margin-bottom: 20px;
+  background-color: #f0f0f0;
+}
+/* line 71, /Users/Meza/Desktop/firstapp/app/assets/stylesheets/scaffolds.scss */
+#error_explanation h2 {
+  text-align: left;
+  font-weight: bold;
+  padding: 5px 5px 5px 15px;
+  font-size: 12px;
+  margin: -7px;
+  margin-bottom: 0;
+  background-color: #c00;
+  color: #fff;
+}
+/* line 82, /Users/Meza/Desktop/firstapp/app/assets/stylesheets/scaffolds.scss */
+#error_explanation ul li {
+  font-size: 12px;
+  list-style: square;
+}
+
+/* line 88, /Users/Meza/Desktop/firstapp/app/assets/stylesheets/scaffolds.scss */
+label {
+  display: block;
+}
+
+/* line 92, /Users/Meza/Desktop/firstapp/app/assets/stylesheets/scaffolds.scss */
+.col-md-4 p, h1 {
+  text-align: center;
+}
+
+/* line 96, /Users/Meza/Desktop/firstapp/app/assets/stylesheets/scaffolds.scss */
+.product-reviews {
+  width: 50%;
+  margin: auto;
+  padding: 2em;
+  border: 2px solid black;
+  border-radius: 10px;
+}
+/* line 5, /Users/Meza/Desktop/firstapp/app/assets/stylesheets/static_pages.scss */
+body {
+  width: 90%;
+  margin: auto;
+  color: black;
+}
+
+/* line 11, /Users/Meza/Desktop/firstapp/app/assets/stylesheets/static_pages.scss */
+.navbar {
+  position: fixed;
+  z-index: 1;
+  background-color: #B2B2B2;
+}
+
+/* line 16, /Users/Meza/Desktop/firstapp/app/assets/stylesheets/static_pages.scss */
+.navbar ul {
+  float: right;
+}
+
+/* line 20, /Users/Meza/Desktop/firstapp/app/assets/stylesheets/static_pages.scss */
+#navbar a {
+  color: black;
+}
+
+/* line 24, /Users/Meza/Desktop/firstapp/app/assets/stylesheets/static_pages.scss */
+h1 span {
+  color: #66B2B2;
+}
+
+/* line 28, /Users/Meza/Desktop/firstapp/app/assets/stylesheets/static_pages.scss */
+h1 {
+  padding-top: 70px;
+}
+
+/* line 32, /Users/Meza/Desktop/firstapp/app/assets/stylesheets/static_pages.scss */
+.contact-h1 {
+  padding-bottom: 30px;
+}
+
+/* line 36, /Users/Meza/Desktop/firstapp/app/assets/stylesheets/static_pages.scss */
+.contact-list li {
+  list-style-type: none;
+  padding-bottom: 10px;
+}
+
+/* line 41, /Users/Meza/Desktop/firstapp/app/assets/stylesheets/static_pages.scss */
+.contact-list ul {
+  padding-left: 5px;
+}
+
+/* line 45, /Users/Meza/Desktop/firstapp/app/assets/stylesheets/static_pages.scss */
+.divider {
+  border: 1px solid;
+}
+
+/* line 49, /Users/Meza/Desktop/firstapp/app/assets/stylesheets/static_pages.scss */
+.product-columns {
+  height: 600px;
+}
+
+/* line 54, /Users/Meza/Desktop/firstapp/app/assets/stylesheets/static_pages.scss */
+footer {
+  padding: 20px 0 50px 0;
+}
+
+/* line 58, /Users/Meza/Desktop/firstapp/app/assets/stylesheets/static_pages.scss */
+.name {
+  padding-top: 0;
+  padding-bottom: 20px;
+}
+
+/* line 63, /Users/Meza/Desktop/firstapp/app/assets/stylesheets/static_pages.scss */
+.carousel-indicators {
+  bottom: 0;
+}
+
+/* line 67, /Users/Meza/Desktop/firstapp/app/assets/stylesheets/static_pages.scss */
+#circles {
+  background-color: black;
+}
+
+/* line 71, /Users/Meza/Desktop/firstapp/app/assets/stylesheets/static_pages.scss */
+.landing {
+  text-align: center;
+}
+
+/* line 75, /Users/Meza/Desktop/firstapp/app/assets/stylesheets/static_pages.scss */
+#landing-page {
+  padding: 0;
+  width: 100%;
+}
+
+/* line 80, /Users/Meza/Desktop/firstapp/app/assets/stylesheets/static_pages.scss */
+.search {
+  margin-bottom: -35px;
+  padding-top: 10px;
+}
+
+/* line 86, /Users/Meza/Desktop/firstapp/app/assets/stylesheets/static_pages.scss */
+.login-field input {
+  padding: 10px;
+  margin-bottom: -10px;
+  font-size: 1.5em;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* line 94, /Users/Meza/Desktop/firstapp/app/assets/stylesheets/static_pages.scss */
+.remember-me label {
+  display: inline;
+}
+
+/* line 98, /Users/Meza/Desktop/firstapp/app/assets/stylesheets/static_pages.scss */
+.button-login, .remember-me, .signup-render {
+  text-align: center;
+}
+
+/* line 102, /Users/Meza/Desktop/firstapp/app/assets/stylesheets/static_pages.scss */
+#alert, #notice {
+  margin-top: 100px;
+  text-align: center;
+}
+
+/* line 108, /Users/Meza/Desktop/firstapp/app/assets/stylesheets/static_pages.scss */
+.glyph {
+  display: inline;
+  padding: 1em;
+}
+
+/* line 113, /Users/Meza/Desktop/firstapp/app/assets/stylesheets/static_pages.scss */
+.g-2 {
+  margin-left: -8px;
+}
+
+/* line 117, /Users/Meza/Desktop/firstapp/app/assets/stylesheets/static_pages.scss */
+.g-3 {
+  margin-left: -6px;
+}
+
+/* line 122, /Users/Meza/Desktop/firstapp/app/assets/stylesheets/static_pages.scss */
+.info p {
+  text-align: center;
+}
+
+/* line 126, /Users/Meza/Desktop/firstapp/app/assets/stylesheets/static_pages.scss */
+.contact-list, .parent-newuser, .editpage-parent, .parent-login {
+  display: flex;
+  display: -ms-flex;
+  display: -webkit-flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+/* line 134, /Users/Meza/Desktop/firstapp/app/assets/stylesheets/static_pages.scss */
+.field-new {
+  margin: 5px 0;
+}
+
+/* line 138, /Users/Meza/Desktop/firstapp/app/assets/stylesheets/static_pages.scss */
+.actions-new {
+  margin-top: 10px;
+}
+
+/* line 142, /Users/Meza/Desktop/firstapp/app/assets/stylesheets/static_pages.scss */
+.panel-default {
+  margin-top: 100px;
+}
+
+/* line 146, /Users/Meza/Desktop/firstapp/app/assets/stylesheets/static_pages.scss */
+#thank-you-text {
+  text-align: center;
+}
+
+/* line 150, /Users/Meza/Desktop/firstapp/app/assets/stylesheets/static_pages.scss */
+#newpage-h2 {
+  text-align: center;
+  padding-top: 70px;
+}
+
+/* line 155, /Users/Meza/Desktop/firstapp/app/assets/stylesheets/static_pages.scss */
+.parent-newuser {
+  align-items: center;
+}
+
+/* line 159, /Users/Meza/Desktop/firstapp/app/assets/stylesheets/static_pages.scss */
+.newpage input {
+  border-radius: 5px;
+}
+
+/* line 163, /Users/Meza/Desktop/firstapp/app/assets/stylesheets/static_pages.scss */
+#cancel-button-edit {
+  margin: 10px 0 10px 0;
+}
+
+/* line 167, /Users/Meza/Desktop/firstapp/app/assets/stylesheets/static_pages.scss */
+#cancel-statement {
+  margin-top: 20px;
+}
+
+/* line 171, /Users/Meza/Desktop/firstapp/app/assets/stylesheets/static_pages.scss */
+#login-h2 {
+  text-align: center;
+  padding-top: 70px;
+}
+
+/* line 176, /Users/Meza/Desktop/firstapp/app/assets/stylesheets/static_pages.scss */
+#forgotpassword {
+  margin-top: 70px;
+  text-align: center;
+}
+
+/* line 181, /Users/Meza/Desktop/firstapp/app/assets/stylesheets/static_pages.scss */
+.parent-password {
+  display: flex;
+  display: -ms-flex;
+  display: -webkit-flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+/* line 190, /Users/Meza/Desktop/firstapp/app/assets/stylesheets/static_pages.scss */
+.password input {
+  padding: 10px;
+  font-size: 1.5em;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* line 197, /Users/Meza/Desktop/firstapp/app/assets/stylesheets/static_pages.scss */
+.about-page p {
+  text-align: center;
+  margin-top: 3em;
+}
+
+/* line 202, /Users/Meza/Desktop/firstapp/app/assets/stylesheets/static_pages.scss */
+.editpage {
+  text-align: center;
+}
+
+/* line 206, /Users/Meza/Desktop/firstapp/app/assets/stylesheets/static_pages.scss */
+#products-h1 {
+  padding-top: 70px;
+}
+
+/* line 209, /Users/Meza/Desktop/firstapp/app/assets/stylesheets/static_pages.scss */
+.landing {
+  padding: 70px 0 20px 0;
+}
+
+/* line 213, /Users/Meza/Desktop/firstapp/app/assets/stylesheets/static_pages.scss */
+.landing-name {
+  text-align: center;
+}
+
+/* line 218, /Users/Meza/Desktop/firstapp/app/assets/stylesheets/static_pages.scss */
+#login {
+  text-transform: uppercase;
+  background-color: black;
+}
+
+/* line 223, /Users/Meza/Desktop/firstapp/app/assets/stylesheets/static_pages.scss */
+#login a {
+  color: white;
+}
+
+@media (max-width: 780px) {
+  /* line 230, /Users/Meza/Desktop/firstapp/app/assets/stylesheets/static_pages.scss */
+  form {
+    padding: 5px 0 0 10px;
+  }
+
+  /* line 233, /Users/Meza/Desktop/firstapp/app/assets/stylesheets/static_pages.scss */
+  input {
+    border: 1px solid black;
+  }
+
+  /* line 236, /Users/Meza/Desktop/firstapp/app/assets/stylesheets/static_pages.scss */
+  textarea {
+    border: 1px solid black;
+  }
+
+  /* line 239, /Users/Meza/Desktop/firstapp/app/assets/stylesheets/static_pages.scss */
+  .glyph {
+    padding: .5em;
+  }
+}
+@media (max-width: 480px) {
+  /* line 245, /Users/Meza/Desktop/firstapp/app/assets/stylesheets/static_pages.scss */
+  .navbar {
+    padding: 0;
+  }
+
+  /* line 248, /Users/Meza/Desktop/firstapp/app/assets/stylesheets/static_pages.scss */
+  .carousel-indicators {
+    bottom: -10px;
+  }
+
+  /* line 251, /Users/Meza/Desktop/firstapp/app/assets/stylesheets/static_pages.scss */
+  .landing {
+    font-size: 1.4em;
+  }
+}
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+
+
+ */
+
+
