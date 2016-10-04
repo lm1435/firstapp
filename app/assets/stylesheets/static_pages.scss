@@ -233,7 +233,7 @@ footer {
 	input {
 	border: 1px solid black;
 	}
-textarea {
+	textarea {
 	border: 1px solid black;
 	}
 	.glyph {
@@ -242,13 +242,13 @@ textarea {
 }
 
 @media (max-width: 480px){
-.navbar {
-	padding: 0;
-	}
-.carousel-indicators {
-	bottom: -10px;
-	}
-.landing {
-	font-size: 1.4em;
-	}
+	.navbar {
+		padding: 0;
+		}
+	.carousel-indicators {
+		bottom: -10px;
+		}
+	.landing {
+		font-size: 1.4em;
+		}
 }
