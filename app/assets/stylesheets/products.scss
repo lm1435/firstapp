@@ -29,7 +29,7 @@ th {
 	display: -webkit-flex;
 	justify-content: space-around;
 	align-items: center;
-	flex-wrap: wrap; 
+	flex-wrap: wrap;
 }
 
 .links-product-show {
@@ -52,6 +52,16 @@ th {
 #product_name {
 	font-size: 3em;
 	margin-bottom: 1em;
+}
+
+.product-columns h1 {
+  padding-top: 0;
+}
+
+.words  {
+  border: 2px solid black;
+  border-radius: 5px;
+  margin-top: 5em;
 }
 
 body {

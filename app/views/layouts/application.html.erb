@@ -9,7 +9,7 @@
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    
+
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
   </head>
@@ -28,22 +28,22 @@
            <div class="search">
             <%= form_tag("/products", method: "get") do %>
              <%= text_field_tag (:q) %>
-             <%= submit_tag("SEARCH") %>
+             <%= submit_tag("SEARCH" , :class => "submit-button") %>
             <% end %>
           </div>
         </div>
-    		<div class="navbar-collapse collapse" id="navbar">
+        <div class="navbar-collapse collapse" id="navbar">
           <ul class="nav navbar-nav navbar-right" id="navbar">
-      			<li>
+            <li>
               <%= link_to 'HOME', root_path %>
             </li>
-      			<li>
-              <%= link_to 'PRODUCT', products_url %>
+            <li>
+              <%= link_to 'BIKES', products_url %>
             </li>
             <li>
               <%= link_to 'ABOUT', static_pages_about_path %>
             </li>
-      			<li>
+            <li>
               <%= link_to 'CONTACT', static_pages_contact_path %>
             </li>
             <li id="login">

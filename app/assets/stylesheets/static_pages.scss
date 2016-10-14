@@ -1,76 +1,87 @@
 body {
-	width: 90%;
-	margin: auto;
-	color: black;
+  width: 90%;
+  margin: auto;
+  color: black;
 }
 
 .navbar {
-	position: fixed;
-	z-index: 1;
-	background-color: #B2B2B2;
+  position: fixed;
+  z-index: 1;
+  background-color: white;
 }
+
 .navbar ul {
-	float:right;
+  text-align: center;
+}
+
+.navbar-toggle {
+  background-color: black;
 }
 
 #navbar a {
-	color: black;
+  color: black;
+}
+
+.submit-button {
+  background-color: black;
+  color: white;
 }
 
 h1 span {
-	color: #66B2B2;
+  color: #66B2B2;
 }
 
 h1 {
-	padding-top: 70px;
+  padding-top: 70px;
 }
 
 .contact-h1 {
-	padding-bottom: 30px;
+  padding-bottom: 30px;
 }
 
 .contact-list li {
 	list-style-type: none;
-	padding-bottom: 10px;
+  padding-bottom: 10px;
 }
 
 .contact-list ul {
-	padding-left: 5px;
+  padding-left: 5px;
 }
 
 .divider {
-	border: 1px solid;
+  border: 1px solid;
 }
 
 .product-columns {
-	height: 600px;
+  height: 600px;
 }
 
 
 footer {
-	padding: 20px 0 50px 0;
+  padding: 20px 0 50px 0;
 }
 
 .name {
-	padding-top: 0;
-	padding-bottom: 20px;
+  padding-top: 0;
+  padding-bottom: 20px;
 }
 
 .carousel-indicators {
-	bottom: 0;
+  bottom: 0;
 }
 
 #circles {
-	background-color: black;
+  background-color: black;
 }
 
 .landing {
-	text-align: center;
+  color: #66B2B2;
+  text-align: center;
 }
 
 #landing-page {
-	padding: 0;
-	width: 100%;
+  padding: 0;
+  width: 100%;
 }
 
 .search {
@@ -80,11 +91,11 @@ footer {
 
 
 .login-field input {
-    padding: 10px;
-    margin-bottom: -10px;
-    font-size: 1.5em;
-    border: 1px solid #ccc;
-    border-radius: 4px;
+  padding: 10px;
+  margin-bottom: -10px;
+  font-size: 1.5em;
+  border: 1px solid #ccc;
+  border-radius: 4px;
 }
 
 .remember-me label {
@@ -102,33 +113,33 @@ footer {
 
 
 .glyph {
-	display: inline;
-	padding: 1em;
+  display: inline;
+  padding: 1em;
 }
 
 .g-2 {
-	margin-left: -8px;
+  margin-left: -8px;
 }
 
 .g-3 {
-	margin-left: -6px;
+  margin-left: -6px;
 }
 
 
 .info p {
-	text-align: center;
+  text-align: center;
 }
 
 .contact-list, .parent-newuser, .editpage-parent, .parent-login{
-	display: flex;
-	display: -ms-flex;
-	display: -webkit-flex;
-	justify-content: space-around;
-	flex-wrap: wrap;
+  display: flex;
+  display: -ms-flex;
+  display: -webkit-flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
 }
 
 .field-new {
-	margin: 5px 0;
+  margin: 5px 0;
 }
 
 .actions-new {
@@ -136,119 +147,143 @@ footer {
 }
 
 .panel-default {
-	margin-top: 100px;
+  margin-top: 100px;
 }
 
 #thank-you-text {
-	text-align: center;
+  text-align: center;
 }
 
 #newpage-h2 {
-	text-align: center;
-	padding-top: 70px;
+  text-align: center;
+  padding-top: 70px;
 }
 
 .parent-newuser {
-	align-items: center;
+  align-items: center;
 }
 
 .newpage input {
-	border-radius: 5px;
+  border-radius: 5px;
 }
 
 #cancel-button-edit {
-	margin: 10px 0 10px 0;
+  margin: 10px 0 10px 0;
 }
 
 #cancel-statement {
-	margin-top: 20px;
+  margin-top: 20px;
 }
 
 #login-h2 {
-	text-align: center;
-	padding-top: 70px;
+  text-align: center;
+  padding-top: 70px;
 }
 
 #forgotpassword {
-	margin-top: 70px;
-	text-align: center;
+  margin-top: 70px;
+  text-align: center;
 }
 
 .parent-password {
-	display: flex;
-	display: -ms-flex;
-	display: -webkit-flex;
-	justify-content: center;
-	flex-wrap: wrap;
-	text-align: center;
+  display: flex;
+  display: -ms-flex;
+  display: -webkit-flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  text-align: center;
 }
 
 .password input {
 	padding: 10px;
-    font-size: 1.5em;
-    border: 1px solid #ccc;
-    border-radius: 4px;
+  font-size: 1.5em;
+  border: 1px solid #ccc;
+  border-radius: 4px;
 }
 
 .about-page p {
+  margin-top: 3em;
 	text-align: center;
-	margin-top: 3em;
 }
 
 .editpage {
-	text-align: center;
+  text-align: center;
 }
 
 #products-h1 {
-	padding-top: 70px;
+  color: #66B2B2;
+  padding-top: 70px;
 }
+
+#product_name, .contact-h1, .about-page h1 {
+  color: #66B2B2;
+}
+
+#landing-page {
+  width: 75%;
+}
+
 .landing {
-	padding: 70px 0 20px 0;
+  padding: 70px 0 20px 0;
 }
 
 .landing-name {
-	text-align: center;
+  text-align: center;
 }
 
+.carousel-control {
+  background-image: none !important;
+}
+
+.glyphicon-chevron-right, .glyphicon-chevron-left {
+  color: #66B2B2;
+  font-size: 2em;
+}
 
 #login {
-	text-transform: uppercase;
-	background-color: black;
-}
+  text-transform: uppercase;
+  background-color: black;
+  }
 
 #login a {
-	color: white;
+  color: white;
 }
 
 #show-users-page {
-	margin-top: 70px;
+  margin-top: 70px;
 }
 
 
 
 @media (max-width: 780px) {
-	form {
-		padding: 5px 0 0 10px;
-	}
-	input {
-	border: 1px solid black;
-	}
-	textarea {
-	border: 1px solid black;
-	}
-	.glyph {
-		padding: .5em;
-	}
+  form {
+    padding: 5px 0 0 10px;
+  }
+  input {
+    border: 1px solid black;
+  }
+  textarea {
+    border: 1px solid black;
+  }
+  .glyph {
+    padding: .5em;
+  }
 }
 
 @media (max-width: 480px){
-	.navbar {
-		padding: 0;
-		}
-	.carousel-indicators {
-		bottom: -10px;
-		}
-	.landing {
-		font-size: 1.4em;
-		}
+  .navbar {
+    padding: 0;
+  }
+  .carousel-indicators {
+    bottom: -10px;
+  }
+  .landing {
+    font-size: 1.4em;
+  }
+  .product-columns {
+    height: 450px;
+  }
+  #q {
+    width: 40%;
+  }
 }
