@@ -86,7 +86,7 @@ footer {
 
 .search {
   margin-bottom: -35px;
-  padding-top: 10px;
+  padding: 12px 0 0 0;
 }
 
 
@@ -215,7 +215,7 @@ footer {
   padding-top: 70px;
 }
 
-#product_name, .contact-h1, .about-page h1 {
+#product_name, .contact-h1, .about-page h1, #payment-success {
   color: #66B2B2;
 }
 
@@ -240,6 +240,7 @@ footer {
   font-size: 2em;
 }
 
+
 #login {
   text-transform: uppercase;
   background-color: black;
@@ -256,9 +257,6 @@ footer {
 
 
 @media (max-width: 780px) {
-  form {
-    padding: 5px 0 0 10px;
-  }
   input {
     border: 1px solid black;
   }
@@ -273,6 +271,10 @@ footer {
 @media (max-width: 480px){
   .navbar {
     padding: 0;
+  }
+  .search {
+    margin-bottom: -35px;
+    padding: 12px 0 0 15px;
   }
   .carousel-indicators {
     bottom: -10px;

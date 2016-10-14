@@ -13,5 +13,9 @@ Rails.application.routes.draw do
 
 	post 'static_pages/thank_you'
 
+  post '/payments/create'
+
+  get '/payments/create'
+
 end
 # devise_for :path => '', :path_names => {:sign_in => 'login', :sign_out => 'logout'},
