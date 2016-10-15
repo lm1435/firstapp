@@ -16,7 +16,7 @@ class ProductsController < ApplicationController
     end
   end
 
-  
+
 
 
   # GET /products/1

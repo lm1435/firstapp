@@ -215,7 +215,7 @@ footer {
   padding-top: 70px;
 }
 
-#product_name, .contact-h1, .about-page h1, #payment-success {
+#product_name, .contact-h1, .about-page h1, #payment-success  {
   color: #66B2B2;
 }
 
@@ -227,7 +227,7 @@ footer {
   padding: 70px 0 20px 0;
 }
 
-.landing-name {
+.landing-name, #payment-success {
   text-align: center;
 }
 
@@ -252,6 +252,11 @@ footer {
 
 #show-users-page {
   margin-top: 70px;
+}
+
+#button-success {
+  margin-top: 3em;
+  text-align: center;
 }
 
 
