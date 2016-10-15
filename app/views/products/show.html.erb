@@ -7,7 +7,7 @@
     <div id="product_img">
       <p>
         <strong class="product-image"></strong><br>
-        <%= image_tag(@product.image_url, class: 'img-responsive') %>
+        <%= image_tag(@product.image_url, id: "prod-img", class: 'img-responsive img-zoom', data_zoom_image: "@product.image_url_large") %>
       </p>
     </div>
     <div id="product-desc">

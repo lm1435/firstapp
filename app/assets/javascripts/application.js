@@ -16,9 +16,12 @@
 //= require_tree .
 
 $(document).on('turbolinks:load', function(){
-    $('.rating').raty( { path: '/assets', scoreName: 'comment[rating]' });
-    $('.rated').raty({path: '/assets', 
-		readOnly: true, 
+    //elevatezoom code//
+    $('.img-zoom').elevateZoom({zoomType: "lens", lensShape: "round", lensSize: 400, lensFadeIn: 400, lensFadeOut: 500});
+    //raty star code//
+    $('.rating').raty({path: '/assets', scoreName: 'comment[rating]'});
+    $('.rated').raty({path: '/assets',
+		readOnly: true,
 		score: function(){
 			return $(this).attr('data-score');
 		}
