@@ -1,0 +1,9 @@
+$('#new_comment').html("Thank you! Your review is appreciated!");
+
+$('.product-reviews').prepend("<%= j render @comment %>");
+
+$("#average-rating").attr('data-score', "<%= @product.average_rating %>");
+
+$(document).on('turbolinks:load ajaxSuccess', function() {
+  refreshRating();
+});

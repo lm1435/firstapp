@@ -15,17 +15,22 @@
 //= require turbolinks
 //= require_tree
 
+
+var refreshRating= function (){
+  $('.rating').raty({path: '/assets', scoreName: 'comment[rating]'});
+  $('.rated').raty({path: '/assets',
+    readOnly: true,
+    scoe: function(){
+      return $(this).attr('data-score');
+    }
+  });
+};
+
 $(document).on('turbolinks:load', function(){
     //elevatezoom code//
     if ($(window).width() >= 781) {
       $('.img-zoom').elevateZoom({zoomType: "lens", lensShape: "round", lensSize: 300, lensFadeIn: 400, lensFadeOut: 500});
     };
     //raty star code//
-    $('.rating').raty({path: '/assets', scoreName: 'comment[rating]'});
-    $('.rated').raty({path: '/assets',
-  		readOnly: true,
-  		score: function(){
-  			return $(this).attr('data-score');
-  		}
-  	});
+    refreshRating();
 });
