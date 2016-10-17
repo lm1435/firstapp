@@ -1,10 +1,12 @@
 <h1 class="name" id="products-h1">Austin Bikes</h1>
 <div class="container-fluid">
     <div class="row">
-       <%= render @products %>
+      <% cache (cache_key_for_products) do %>
+        <%= render @products %>
+      <% end %>
     </div>
 </div>
 
 <br>
-<!-- 
+<!--
 <%= link_to 'New Product', new_product_path %> -->

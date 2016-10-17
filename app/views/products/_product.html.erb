@@ -6,10 +6,12 @@
       <% end %>
     </p>
     <div class="words">
-      <h1><%= product.name %></h1>
-      <p><%= product.description %></p>
-      <p><%= product.colour %></p>
-      <p>$<%= product.price %></p>
+      <% cache product do %>
+        <h1><%= product.name %></h1>
+        <p><%= product.description %></p>
+        <p><%= product.colour %></p>
+        <p>$<%= product.price %></p>
+      <% end %>
     </div>
 
     <p>
