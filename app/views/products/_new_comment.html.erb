@@ -2,7 +2,7 @@
 	<h4>Submit your review</h4>
 	<%= form_for([@product, @product.comments.build], remote: true) do |f| %>
 		<p>
-			<%= f.text_area :body,  cols: "40", rows: "5", style: "resize:none", placeholder: 'COMMENTS' %>
+			<%= f.text_area :body,  cols: "40", rows: "5", style: "resize:none", placeholder: 'Please leave your review' %>
 		</p>
 
 		<p>

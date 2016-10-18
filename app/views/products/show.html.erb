@@ -40,6 +40,9 @@
   </div>
   <br>
   <p>
+    <div class="alert alert-info" style="display:none" role="alert">
+      New Review!!
+    </div>
     <%= render partial:'new_comment' %>
     <%= render partial:'comments' %>
     <%= will_paginate @comments %>

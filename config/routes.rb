@@ -17,5 +17,7 @@ Rails.application.routes.draw do
 
   post 'payments/create'
 
+  mount ActionCable.server => '/cable'
+
 end
 # devise_for :path => '', :path_names => {:sign_in => 'login', :sign_out => 'logout'},
