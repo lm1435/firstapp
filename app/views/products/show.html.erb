@@ -1,47 +1,49 @@
 <div class="overall-product-show" id="products">
-  <% cache @product do %>
-    <p id="product_name">
-      <strong class="product-name"></strong><br>
-      <%= @product.name %>
-    </p>
-    <div class="product-show-flex">
-      <div id="product_img">
-        <p>
-          <strong class="product-image"></strong><br>
-          <%= image_tag(@product.image_url, id: "prod-img", class: 'img-responsive img-zoom', data_zoom_image: "@product.image_url_large") %>
-        </p>
-      </div>
-      <div id="product-desc">
-        <p>
-          <strong class="product-description">Description</strong><br>
-          <%= @product.description %>
-        </p>
+  <div class="row" data-product-id="<%= @product.id %>">
+    <% cache @product do %>
+      <p id="product_name">
+        <strong class="product-name"></strong><br>
+        <%= @product.name %>
+      </p>
+      <div class="product-show-flex">
+        <div id="product_img">
+          <p>
+            <strong class="product-image"></strong><br>
+            <%= image_tag(@product.image_url, id: "prod-img", class: 'img-responsive img-zoom', data_zoom_image: "@product.image_url_large") %>
+          </p>
+        </div>
+        <div id="product-desc">
+          <p>
+            <strong class="product-description">Description</strong><br>
+            <%= @product.description %>
+          </p>
 
-        <p>
-        	<strong class="product-colour">Color</strong><br>
-        	<%= @product.colour %>
-        </p>
+          <p>
+          	<strong class="product-colour">Color</strong><br>
+          	<%= @product.colour %>
+          </p>
 
-        <p>
-        	<strong class="product-price">Price</strong><br>$<%= @product.price %>
-        </p>
-        <p>
-          Average Rating
-          <div class="rated" id="average-rating" data-score="<%= @product.average_rating %>"></div>
-        </p>
-        <p>
-          <%= form_tag "/payments/create" do %>
-            <%= render partial: "shared/stripe_checkout_button" %>
-            <%= hidden_field_tag(:product_id, @product.id) %>
-          <% end %>
-        </p>
-      </div>
-    <% end %>
+          <p>
+          	<strong class="product-price">Price</strong><br>$<%= @product.price %>
+          </p>
+          <p>
+            Average Rating
+            <div class="rated" id="average-rating" data-score="<%= @product.average_rating %>"></div>
+          </p>
+          <p>
+            <%= form_tag "/payments/create" do %>
+              <%= render partial: "shared/stripe_checkout_button" %>
+              <%= hidden_field_tag(:product_id, @product.id) %>
+            <% end %>
+          </p>
+        </div>
+      <% end %>
+    </div>
   </div>
   <br>
   <p>
     <div class="alert alert-info" style="display:none" role="alert">
-      New Review!!
+      New review was JUST posted!!
     </div>
     <%= render partial:'new_comment' %>
     <%= render partial:'comments' %>

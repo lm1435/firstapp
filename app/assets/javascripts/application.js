@@ -29,7 +29,7 @@ var refreshRating= function (){
 $(document).on('turbolinks:load', function(){
     //elevatezoom code//
     if ($(window).width() >= 781) {
-      $('.img-zoom').elevateZoom({zoomType: "lens", lensShape: "round", lensSize: 300, lensFadeIn: 400, lensFadeOut: 500});
+      $('.img-zoom').elevateZoom({zoomType: "lens", lensShape: "round", lensSize: 200, lensFadeIn: 400, lensFadeOut: 500});
     };
     //raty star code//
     refreshRating();

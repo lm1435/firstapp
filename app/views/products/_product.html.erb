@@ -2,7 +2,7 @@
   <div class="col-sm-4 col-md-4 col-lg-4 product-columns">
     <p>
       <%= link_to product do %>
-      <%= image_tag(product.image_url, class: "img-responsive") %>
+        <%= image_tag(product.image_url, class: "img-responsive") %>
       <% end %>
     </p>
     <div class="words">
@@ -15,7 +15,7 @@
     </div>
 
     <p>
-      <% if signed_in? && current_user.admin? %>
+      <% if current_user && current_user.admin? %>
         <%= link_to 'Edit', edit_product_path(product) %>
       <% end %>
     </p>
