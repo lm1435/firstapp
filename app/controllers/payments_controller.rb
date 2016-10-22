@@ -20,9 +20,9 @@ class PaymentsController < ApplicationController
     rescue Stripe::CardError => e
       # The card has been declined
       body = e.json_body
-      err = body[:error]
-      flash[:error] = "Unfortunately, there was an error processing your payment: #{err[:message]}"
-      redirect_to products_path
+      # err = body[:error]
+      # notice[:error] = "Unfortunately, there was an error processing your payment: #{err[:message]}"
+      redirect_to product_path(@product), notice: "Unfortunately, there was an error processing your payment"
     end
     #
   end

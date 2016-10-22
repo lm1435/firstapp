@@ -17,7 +17,7 @@
 
 
 var refreshRating= function (){
-  $('.rating').raty({path: '/assets', scoreName: 'comment[rating]'});
+  $('.rating').raty('destroy');
   $('.rated').raty({path: '/assets',
     readOnly: true,
     score: function(){
