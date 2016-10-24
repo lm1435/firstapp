@@ -17,7 +17,7 @@
 
 
 var refreshRating= function (){
-  $('.rating').raty('destroy');
+  $('.rated').raty('destroy');
   $('.rated').raty({path: '/assets',
     readOnly: true,
     score: function(){
@@ -25,6 +25,8 @@ var refreshRating= function (){
     }
   });
 };
+
+
 
 $(document).on('turbolinks:load', function(){
     //elevatezoom code//
