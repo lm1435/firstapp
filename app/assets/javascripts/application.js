@@ -18,6 +18,8 @@
 
 var refreshRating= function (){
   $('.rated').raty('destroy');
+  $('.rating').raty('destroy');
+  $('.rating').raty({path: '/assets', scoreName: 'comment[rating]'});
   $('.rated').raty({path: '/assets',
     readOnly: true,
     score: function(){
