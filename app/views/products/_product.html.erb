@@ -11,6 +11,10 @@
         <p><%= product.description %></p>
         <p><%= product.colour %></p>
         <p>$<%= product.price %></p>
+        <p>
+          PRODUCT RATING
+          <div class="rated products-rated" id="average-rating" data-score="<%= product.average_rating %>"></div>
+        </p>
       <% end %>
     </div>
 
