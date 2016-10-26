@@ -11,10 +11,10 @@ class CommentsController < ApplicationController
         format.json { render :show, status: :created, location: @product }
         format.js
       else
-      format.html { redirect_to @product, alert: 'Review was not saved successfully.' }
-      format.json { render json: @comment.errors, status: :unprocessable_entity }
+        format.html { redirect_to @product, alert: 'Review was not saved successfully.' }
+        format.json { render json: @comment.errors, status: :unprocessable_entity }
+      end
     end
-end
   end
 
   def destroy
