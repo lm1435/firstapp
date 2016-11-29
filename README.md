@@ -1,3 +1,5 @@
-This is my first ruby project and my first hands on github experience. Hope I get the hang of this soon. 
+This is my first ruby project and my first hands on github experience.
 
-for more info about myself visit http://luis.bitballoon.com/#about-container.
+Built this fake e-commerce site from the ground up.
+
+for more info about myself visit http://luismeza.io
