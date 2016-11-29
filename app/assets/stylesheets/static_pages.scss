@@ -52,11 +52,6 @@ h1 {
   border: 1px solid;
 }
 
-.product-columns {
-  height: 600px;
-}
-
-
 footer {
   padding: 20px 0 50px 0;
 }
@@ -111,6 +106,9 @@ footer {
   text-align: center;
 }
 
+#website-link {
+  color: #66B2B2;
+}
 
 .glyph {
   display: inline;
@@ -280,6 +278,18 @@ footer {
   }
 }
 
+@media (max-width: 760px){
+  .product-columns {
+    height: 700px;
+  }
+}
+
+@media (max-width: 680px){
+  .product-columns {
+    height: 650px;
+  }
+}
+
 @media (max-width: 480px){
   .navbar {
     padding: 0;
@@ -291,7 +301,7 @@ footer {
     font-size: 1.4em;
   }
   .product-columns {
-    height: 450px;
+    height: 500px;
   }
   #q {
     width: 40%;
